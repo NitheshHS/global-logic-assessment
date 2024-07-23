@@ -1,7 +1,5 @@
-package test;
+package assessment;
 
-
-import base.BaseTest;
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.hamcrest.Matchers;
@@ -9,7 +7,11 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class GetRequestTest extends BaseTest {
+public class AssessmentTest {
+
+    static {
+        RestAssured.baseURI = "http://localhost:80";
+    }
 
     @Test(description = "Send /get request and validate response code")
     void getRequestTest(){
