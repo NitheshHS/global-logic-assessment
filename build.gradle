@@ -1,0 +1,19 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.nithesh'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.10.2'
+    testImplementation 'io.rest-assured:rest-assured:5.4.0'
+}
+
+test {
+    useTestNG()
+}

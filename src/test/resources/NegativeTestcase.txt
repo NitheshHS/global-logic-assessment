@@ -1,0 +1,30 @@
+1. Request to a non-existent endpoint or URL.
+Example: GET /get/usersxyz
+
+2. Unauthorized Access:
+Attempting to access a resource without proper authentication.
+Example: Accessing a protected resource without providing valid authentication credentials.
+Empty Response:
+
+3. Endpoint returns an empty response or no data.
+Example: Endpoint GET /api/users returns an empty JSON array [].
+Invalid Query Parameters:
+
+4. Providing invalid or unsupported query parameters.
+Example: GET /get?location=xyz where xyz is not a valid sorting option.
+
+
+5. Sending a POST request without mandatory fields.
+Example: Missing name field in a request to create a user.
+Invalid JSON Payload:
+
+6. Sending a POST request with malformed JSON.
+Example: Invalid JSON format in the request body.
+Duplicate Resource:
+
+7. Attempting to create a resource that already exists.
+Example: Trying to create a user with an email that is already registered.
+Validation Errors:
+
+8. Sending a POST request with data that fails validation.
+Example: Trying to create a user with an invalid email format.
